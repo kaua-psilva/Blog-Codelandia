@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  background-color: #121214;
+  color: white;
+
+}
+header {
+  width: 100%;
+  height: 290px;
+  background-color: #17171a;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 40px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  letter-spacing: 2px;
+  gap: 16px;
+}
+header input {
+  width: 70%;
+  height: 56px;
+  border: 2px solid #252529;
+  background-color: #202024;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 24px;
+  color: white;
+  font-weight: 500;
+  color: #AFABB6;
+}
+header input::placeholder {
+  font-size: 18px;
+  color: #AFABB6;
+  font-family: "Space Grotesk", sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+header span {
+  color: #e07b67;
+}
+
+.card h1 {
+  font-family: "Space Grotesk";
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: justify;
+  max-width: 100%;
+}
+.card:hover {
+  transform: scale(105%);
+}
+.card p {
+  line-height: 24px;
+  color: #AFABB6;
+}
+#card-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Inter";
+}
+#card-btn p {
+  color: #e07b67;
+  font-size: 16px;
+  font-weight: 500;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-top: 80px;
+  padding-bottom: 120px;
+}
+.card {
+  padding: 10px;
+  width: 70%;
+  margin: auto;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 60px;
+  line-height: 40px;
+  border-radius: 10px;
+  background-color: #17171a;
+  cursor: pointer;
+  transition: 0.8s ease-in-out;
+  border: none;
+  opacity: 0;
+  transform: translateY(50px);
+  border: solid 2px #252529  ;
+}
+.card:hover {
+  border: 2px solid #e07b67;
+  transform: scale(120%);
+  box-shadow: 0px 0px 8px #e07b67;
+}
+.card p {
+  font-family: "Inter";
+}
+footer{
+  text-align: center;
+  font-family: "Inter";
+}
+footer a{
+  color: #e07b67;
+  font-weight: 600;
+  text-decoration: none;
+  transition: .8s;
+}
+
+@media screen and (max-width: 500px) {
+  header h1{
+    font-size: 64px;
+  }
+}
+@media screen and (max-width: 480px) {
+  header h1{
+    font-size: 52px;
+  }
+  @media screen and (min-width: 390px) {
+    header h1{
+      font-size: 52px;
+    }
+    .card{
+      width: 250px;
+    }
+  }
+}
