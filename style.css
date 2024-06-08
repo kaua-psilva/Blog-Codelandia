@@ -57,7 +57,7 @@ header span {
   margin-bottom: 10px;
   font-size: 24px;
   font-weight: 500;
-  text-align: justify;
+  text-align: left;
   max-width: 100%;
 }
 .card:hover {
@@ -89,7 +89,6 @@ main {
   padding: 10px;
   width: 70%;
   margin: auto;
-  text-align: justify;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -111,6 +110,7 @@ main {
 }
 .card p {
   font-family: "Inter";
+  text-align: left;
 }
 footer{
   text-align: center;
