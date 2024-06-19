@@ -10,4 +10,3 @@ Desenvolvi o projeto no intuito de colocar em prática meus conhecimentos em Web
 ### 
 
 ![](assets/desktop.png)
-![](assets/iPhone-13-(iOS-15)-127.0.0.1.png)
