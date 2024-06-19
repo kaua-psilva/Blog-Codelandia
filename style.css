@@ -20,14 +20,14 @@ header {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  font-size: 18px;
+  font-size: 40px;
   font-family: "Space Grotesk", sans-serif;
   font-weight: 500;
   letter-spacing: 2px;
   gap: 16px;
 }
 #text-flex{
-  width:  70%;
+  min-width:  70%;
   margin: 30px 30px;
   display: flex;
   justify-content: space-between;
@@ -43,7 +43,7 @@ header input {
   color: white;
   font-weight: 500;
   color: #AFABB6;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
 }
 
 header input::placeholder {
@@ -159,5 +159,17 @@ footer a:hover {
   }
   .card {
     width: 250px;
+  }
+}
+@media screen and (max-width: 410px){
+  .card{
+    width: 220px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 370px){
+  .card{
+    width: 200px;
+    font-size: 18px;
   }
 }

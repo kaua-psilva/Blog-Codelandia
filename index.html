@@ -5,18 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Codelandia</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/SplitText.min.js"></script>
-    <link rel="shortcut icon" href="assets/favicon-16x16.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        <div id="text-flex">
             <h1 id="header-txt"><span>Code</span>Lândia</h1>
-            <h1>blog</h1>
-        </div>
         <input type="text" placeholder="Pesquisar no Blog">
     </header>
     <main>
@@ -126,21 +118,5 @@
             <p>Projeto desenvolvido por <a href="#">Kauã W3b</a></p>
         </footer>
     </main>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            gsap.registerPlugin(SplitText);
-            const myText = document.getElementById("header-txt");
-            const split = new SplitText(myText, { type: "chars" });
-
-            // Animar as letras para aparecerem uma por uma
-            gsap.from(split.chars, {
-                duration: 1,
-                opacity: 0,
-                y: 50,
-                stagger: 0.05
-            });
-        });
-    </script>
 </body>
-
 </html>
